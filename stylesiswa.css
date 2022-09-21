@@ -16,6 +16,7 @@
     height: 100vh;
     background-color: #042331;
     position: sticky;
+    top: 0;
 }
 
 .sidebar header{
@@ -85,7 +86,7 @@ ul li:hover a{
 
 .create button{
     margin-top: 5%;
-    margin-left: 30px;
+
     width: 120px;
     height: 28px;
     border-radius: 10px;
@@ -113,8 +114,6 @@ ul li:hover a{
     font-size: 15px ;
     user-select: none;
     border-radius: 20px;
-    border-top-right-radius: 10px; 
-    border-bottom-left-radius:10px ;
     border: 1px solid black;
 }
 
@@ -131,7 +130,7 @@ ul li:hover a{
 }
  
 .tablesiswa, th, td {
-    padding: 8px 20px;
+    padding: 8px 15px;
     text-align: center;
     border-bottom: 1px solid rgb(197, 197, 197);
 
@@ -167,4 +166,37 @@ ul li:hover a{
 .btnhapus:hover{
 
     cursor: pointer;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: -30;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    margin-top: 43px;
+}
+
+.formcari{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 10px;
+    padding: 10px 18px;
+    margin: 7px 0;
+    margin-right: -25px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 20px;
+}
+
+.tombolcari{
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    right: 10px;
 }

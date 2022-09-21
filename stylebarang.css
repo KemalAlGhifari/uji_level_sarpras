@@ -85,7 +85,6 @@ ul li:hover a{
 
 .create button{
     margin-top: 5%;
-    margin-left: 30px;
     width: 120px;
     height: 28px;
     border-radius: 10px;
@@ -167,4 +166,37 @@ ul li:hover a{
 .btnhapus:hover{
 
     cursor: pointer;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: -30;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    margin-top: 43px;
+}
+
+.formcari{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 3px;
+    border-radius: 10px;
+    padding: 10px 18px;
+    margin: 7px 0;
+    margin-right: -25px;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 20px;
+}
+
+.tombolcari{
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    right: 10px;
 }

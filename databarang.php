@@ -35,7 +35,13 @@ include "konek.php"
             <h1 class="judul">Data Barang</h1>
             <p>Halaman ini berisi data barang sarpras sekolah SMK Taruna Bhakti</p>
 
-            <a class="create" href="insertbarang.html"><button>CREATE +</button></a>
+            <div class="atastabel">
+                <a class="create" href="insertbarang.html"><button>CREATE +</button></a>
+                <form method="GET" action="databarang.php" class="search" >
+                    <input autocomplete="off" class="formcari" type="text" name="caribarang" value="<?php if(isset($_GET['caribarang'])){ echo $_GET['caribarang']; } ?>">
+                    <button class="tombolcari"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
             
             <div class="tables"></div>
             <table class="tablesiswa">
@@ -50,8 +56,14 @@ include "konek.php"
                 </tr>
 
                 <?php 
+
+                    if(isset($_GET['caribarang'])){
+                        $pencarian = $_GET['caribarang'];
+                        $sql = "SELECT * FROM data_barang WHERE id_barang LIKE '%".$pencarian."%' or nama_barang LIKE '%".$pencarian."%'";
+                    }else{
+                        $sql = "SELECT * FROM data_barang";
+                    }
                     $i = 1;
-                    $sql = "SELECT * FROM data_barang";
                     $query = mysqli_query($con, $sql);
                     while($pel = mysqli_fetch_array($query)){
                         echo "

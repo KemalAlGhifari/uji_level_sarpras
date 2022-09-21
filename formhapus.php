@@ -4,7 +4,6 @@
     $sql = "SELECT * FROM data_siswa WHERE id_siswa='$id_siswa'";
     $query = mysqli_query($con, $sql);
     $pel = mysqli_fetch_array($query);
-
     if(mysqli_num_rows($query) < 1){
         die ("data tidak ditemukan");
     }
