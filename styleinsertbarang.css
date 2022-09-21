@@ -5,16 +5,14 @@
 }
 
 
-.siswa{
-    background-color: #071c25;
-}
+
 
 .container{
     display: flex;
     font-family: 'Quicksand', sans-serif;
 }
 
-.siswa{
+.barang{
     background-color: #071c25;
 }
 

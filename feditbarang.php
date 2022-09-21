@@ -1,7 +1,7 @@
 <?php 
     include  "konek.php";
-    $id_siswa = $_GET['id_siswa'];
-    $sql = "SELECT * FROM data_siswa WHERE id_siswa='$id_siswa'";
+    $id_barang = $_GET['id_barang'];
+    $sql = "SELECT * FROM data_barang WHERE id_barang='$id_barang'";
     $query = mysqli_query($con, $sql);
     $pel = mysqli_fetch_array($query);
 
@@ -16,12 +16,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form hapus</title>
+    <title>Document</title>
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css ">
 
     <!-- style css -->
-    <link rel="stylesheet" href="stylehapus.css">
+    <link rel="stylesheet" href="stylefeditbarang.css">
 
     <!-- Quicksan -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,47 +33,47 @@
          <div class="sidebar">
             <header><i class="fa-regular fa-circle-user"></i> ADMIN USER</header>
             <ul>
-                <li><a class="siswa" href="datasiswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
-                <li><a href="databarang.php"><i class="fa-solid fa-box"></i>Data Barang</a></li>
+                <li><a href="datasiswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
+                <li><a class="barang" href="databarang.php"><i class="fa-solid fa-box"></i>Data Barang</a></li>
             </ul>
         </div>
         <div class="content">
-            <form action="hapus.php" method="post">
+            <form action="editbarang.php" method="post">
                 <div class="form">
-                    <h1>FORM HAPUS DATA SISWA</h1>
+                    <h1>FORM EDIT DATA BARANG</h1>
                 </div>
                 <table class="tbinsert">
                     <tr>
                         <td>
-                            <input value="<?php echo $pel['id_siswa'] ?>" required="required" placeholder="Masukan Id Siswa" class="isi" type="hidden" name="Id_siswa">
+                            <input value="<?php echo $pel['id_barang'] ?>" required="required" placeholder="Masukan Id Siswa" class="isi" type="hidden" name="id_barang">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">Nama Siswa</label></p></td>
+                        <td><p><label class="tulisan">Nama Barang</label></p></td>
                         <td>
-                            <input disabled value="<?php echo $pel['nama_siswa'] ?>" required="required" placeholder="Masukan Nama Siswa" class="isi" type="text" name="Nama_siswa">
+                            <input value="<?php echo $pel['nama_barang'] ?>" required="required" placeholder="Masukan Nama Siswa" class="isi" type="text" name="nama_barang">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">Kelas Siswa</label></p></td>
+                        <td><p ><label class="tulisan">Tgl Pembelian</label></p></td>
                         <td>
-                            <input disabled value="<?php echo $pel['kelas'] ?>" required="required" placeholder="Masukan Kelas Siswa" class="isi" type="text" name="Kelas_siswa">
+                            <input value="<?php echo $pel['tgl_pembelian'] ?>" required="required" placeholder="Masukan Kelas Siswa" class="isi" type="text" name="tgl_pembelian">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">Alamat</label></p></td>
+                        <td><p ><label class="tulisan">Kondisi</label></p></td>
                         <td>
-                            <input disabled value="<?php echo $pel['alamat'] ?>" required="required" placeholder="Masukan Alamat Siswa" class="isi" type="text" name="Alamat_siswa">
+                            <input value="<?php echo $pel['kondisi'] ?>" required="required" placeholder="Masukan Alamat Siswa" class="isi" type="text" name="kondisi">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">No Telepon</label></p></td>
+                        <td><p ><label class="tulisan">Jumlah</label></p></td>
                         <td>
-                            <input disabled value="<?php echo $pel['no_telepon'] ?>" required="required" placeholder="Masukan No Telepon Siswa" class="isi" type="number" name="Telepon">
+                            <input value="<?php echo $pel['jumlah'] ?>" required="required" placeholder="Masukan No Telepon Siswa" class="isi" type="number" name="jumlah">
                         </td>
                     </tr>
                 </table>
-                <input class="btnsimpan" type="submit" name="hapus" value="HAPUS">
+                <input class="btnsimpan" type="submit" name="editbarang" value="Simpan">
                 
             </form>
         </div>

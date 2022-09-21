@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Insert data barang</title>
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css ">
 
     <!-- style css -->
-    <link rel="stylesheet" href="styleinsert.css">
+    <link rel="stylesheet" href="styleinsertbarang.css">
 
     <!-- Quicksan -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,46 +21,46 @@
          <div class="sidebar">
             <header><i class="fa-regular fa-circle-user"></i> ADMIN USER</header>
             <ul>
-                <li><a class="siswa" href="datasiswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
-                <li><a href="databarang.php"><i class="fa-solid fa-box"></i>Data Barang</a></li>
+                <li><a href="datasiswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
+                <li><a class="barang" href="databarang.php"><i class="fa-solid fa-box"></i>Data Barang</a></li>
             </ul>
         </div>
         <div class="content">
-            <form action="save.php" method="post">
+            <form action="savebarang.php" method="post">
                 <div class="form">
-                    <h1>FORM INSERT DATA SISWA</h1>
+                    <h1>FORM INSERT DATA BARANG</h1>
                 </div>
                 <table class="tbinsert">
                     <tr>
-                            <input required="required" placeholder="Masukan Id Siswa" class="isi" type="hidden" name="id_siswa">
+                            <input  placeholder="Masukan Id Siswa" class="isi" type="hidden" name="id_baran">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">Nama Siswa</label></p></td>
+                        <td><p ><label class="tulisan">Nama Barang</label></p></td>
                         <td>
-                            <input required="required" placeholder="Masukan Nama Siswa" class="isi" type="text" name="nama_siswa">
+                            <input required="required" placeholder="Masukan Nama Siswa" class="isi" type="text" name="nama_barang">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">Kelas Siswa</label></p></td>
+                        <td><p ><label class="tulisan">Tgl Pembelian</label></p></td>
                         <td>
-                            <input required="required" placeholder="Masukan Kelas Siswa" class="isi" type="text" name="kelas_siswa">
+                            <input required="required" placeholder="Masukan Kelas Siswa" class="isi" type="text" name="tgl_pembelian">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">Alamat</label></p></td>
+                        <td><p ><label class="tulisan">Kondisi</label></p></td>
                         <td>
-                            <input required="required" placeholder="Masukan Alamat Siswa" class="isi" type="text" name="alamat_siswa">
+                            <input required="required" placeholder="Masukan Alamat Siswa" class="isi" type="text" name="kondisi">
                         </td>
                     </tr>
                     <tr>
-                        <td><p ><label class="tulisan">No Telepon</label></p></td>
+                        <td><p ><label class="tulisan">Jumlah</label></p></td>
                         <td>
-                            <input required="required" placeholder="Masukan No Telepon Siswa" class="isi" type="number" name="telepon">
+                            <input required="required" placeholder="Masukan No Telepon Siswa" class="isi" type="number" name="jumlah">
                         </td>
                     </tr>
                 </table>
-                <input class="btnsimpan" type="submit" name="save" value="simpan">
+                <input class="btnsimpan" type="submit" name="savebarang" value="simpan">
                 
             </form>
             

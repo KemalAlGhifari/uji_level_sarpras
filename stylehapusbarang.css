@@ -5,16 +5,14 @@
 }
 
 
-.siswa{
-    background-color: #071c25;
-}
+
 
 .container{
     display: flex;
     font-family: 'Quicksand', sans-serif;
 }
 
-.siswa{
+.barang{
     background-color: #071c25;
 }
 
@@ -78,6 +76,9 @@ ul li:hover a{
     font-size: 20px;
 }
 
+.siswa{
+    background-color: #071c25;
+}
 
 .tulisan{
     font-size: 20px;
@@ -106,7 +107,7 @@ ul li:hover a{
 }
 
 .btnsimpan{
-    background-color: #3BBA00;
+    background-color: red;
     color: white;
     border: none;
     border-radius: 5px;

@@ -5,17 +5,11 @@
 }
 
 
-.siswa{
-    background-color: #071c25;
-}
+
 
 .container{
     display: flex;
     font-family: 'Quicksand', sans-serif;
-}
-
-.siswa{
-    background-color: #071c25;
 }
 
 .sidebar{
@@ -23,6 +17,10 @@
     width: 290px;
     height: 100vh;
     background-color: #042331;
+}
+
+.barang{
+    background-color: #071c25;
 }
 
 .sidebar header{

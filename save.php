@@ -1,12 +1,12 @@
 <?php 
     include "konek.php";
 
-    if (isset($_POST['simpan'])){
-        $id_siswa = $_POST['Id_siswa'];
-        $nama_siswa = $_POST['Nama_siswa'];
-        $kelas = $_POST['Kelas_siswa'];
-        $alamat = $_POST['Alamat_siswa'];
-        $telepon = $_POST['Telepon'];
+    if (isset($_POST['save'])){
+        $id_siswa = $_POST['id_siswa'];
+        $nama_siswa = $_POST['nama_siswa'];
+        $kelas = $_POST['kelas_siswa'];
+        $alamat = $_POST['alamat_siswa'];
+        $telepon = $_POST['telepon'];
 
         $sql = "INSERT INTO `data_siswa` (`id_siswa`, `nama_siswa`, `kelas`, `alamat`, `no_telepon`) VALUES ('$id_siswa', '$nama_siswa', '$kelas', '$alamat', '$telepon');";
         $query = mysqli_query($con, $sql);

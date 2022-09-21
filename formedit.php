@@ -33,8 +33,8 @@
          <div class="sidebar">
             <header><i class="fa-regular fa-circle-user"></i> ADMIN USER</header>
             <ul>
-                <li><a href="datasiswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
-                <li><a href=""><i class="fa-solid fa-box"></i>Data Barang</a></li>
+                <li><a class="siswa" href="datasiswa.php"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
+                <li><a href="databarang.php"><i class="fa-solid fa-box"></i>Data Barang</a></li>
             </ul>
         </div>
         <div class="content">
@@ -45,31 +45,31 @@
                 <table class="tbinsert">
                     <tr>
                         <td>
-                            <input value="<?php echo $pel['id_siswa'] ?>" required="required" placeholder="Masukan Id Siswa" class="isi" type="hidden" name="Id_siswa">
+                            <input value="<?php echo $pel['id_siswa'] ?>" required="required" placeholder="Masukan Id Siswa" class="isi" type="hidden" name="id_siswa">
                         </td>
                     </tr>
                     <tr>
                         <td><p ><label class="tulisan">Nama Siswa</label></p></td>
                         <td>
-                            <input value="<?php echo $pel['nama_siswa'] ?>" required="required" placeholder="Masukan Nama Siswa" class="isi" type="text" name="Nama_siswa">
+                            <input value="<?php echo $pel['nama_siswa'] ?>" required="required" placeholder="Masukan Nama Siswa" class="isi" type="text" name="nama_siswa">
                         </td>
                     </tr>
                     <tr>
                         <td><p ><label class="tulisan">Kelas Siswa</label></p></td>
                         <td>
-                            <input value="<?php echo $pel['kelas'] ?>" required="required" placeholder="Masukan Kelas Siswa" class="isi" type="text" name="Kelas_siswa">
+                            <input value="<?php echo $pel['kelas'] ?>" required="required" placeholder="Masukan Kelas Siswa" class="isi" type="text" name="kelas_siswa">
                         </td>
                     </tr>
                     <tr>
                         <td><p ><label class="tulisan">Alamat</label></p></td>
                         <td>
-                            <input value="<?php echo $pel['alamat'] ?>" required="required" placeholder="Masukan Alamat Siswa" class="isi" type="text" name="Alamat_siswa">
+                            <input value="<?php echo $pel['alamat'] ?>" required="required" placeholder="Masukan Alamat Siswa" class="isi" type="text" name="alamat_siswa">
                         </td>
                     </tr>
                     <tr>
                         <td><p ><label class="tulisan">No Telepon</label></p></td>
                         <td>
-                            <input value="<?php echo $pel['no_telepon'] ?>" required="required" placeholder="Masukan No Telepon Siswa" class="isi" type="number" name="Telepon">
+                            <input value="<?php echo $pel['no_telepon'] ?>" required="required" placeholder="Masukan No Telepon Siswa" class="isi" type="number" name="telepon">
                         </td>
                     </tr>
                 </table>

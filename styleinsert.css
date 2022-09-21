@@ -45,6 +45,10 @@
 
 }
 
+.siswa{
+    background-color: #071c25;
+}
+
 ul li:hover a{
     padding-left: 50px;
 }
